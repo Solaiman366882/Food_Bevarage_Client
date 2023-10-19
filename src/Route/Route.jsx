@@ -12,22 +12,9 @@ export const router = createBrowserRouter([
         children:[
             {
                 path:'/',
-                element:<Home></Home>
+                element:<Home></Home>,
             }
         ]
     }
 ])
 
-
-// const Route = () => {
-
-
-
-//     // return (
-//     //     <div>
-            
-//     //     </div>
-//     // );
-// };
-
-// export default Route;

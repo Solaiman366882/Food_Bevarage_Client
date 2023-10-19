@@ -1,0 +1,51 @@
+.c-btn {
+    position: relative;
+    font-size: 14px;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 0px;
+    padding: 10px 20px;
+    font-weight: 500;
+    display: inline-block;
+    text-transform: capitalize;
+    background-color: #beb996;
+    transition: 1s;
+}
+
+.c-btn:hover {
+    animation: pulse 1.5s ease 0s 1 alternate both;
+
+    box-shadow: 8px 8px #27272f7c;
+  }
+  @keyframes pulse {
+    0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 0 50%;
+	}
+
+	10% {
+		transform: rotate(2deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-4deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(4deg);
+	}
+
+	80% {
+		transform: rotate(-2deg);
+	}
+
+	90% {
+		transform: rotate(2deg);
+	}
+  }
