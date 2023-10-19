@@ -76,6 +76,52 @@
     margin-bottom: 12px;
 }
 
+/* ======== Form Design css ======== */
+
+.form-area {
+  border: 18px double #27272f;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.form-area .single-input {
+  width: 100%;
+}
+.form-area .single-input input {
+  position: relative;
+  display: block;
+  width: 100%;
+  line-height: 18px;
+  padding: 10px 20px;
+  height: 54px;
+  color: #000000;
+  font-size: 14px;
+  border-radius: 0px;
+  background-color: #ffffff;
+  border: 1px solid #d1d1d1;
+}
+.form-area .ask-to-go {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+.form-area .ask-to-go p{
+  position: relative;
+    color: #27272f;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+.form-area .ask-to-go p span{
+    font-size: 30px;
+    font-family: 'Niconne', cursive;
+    color: #de9190;
+    text-decoration: underline;
+}
+
 
 
 
