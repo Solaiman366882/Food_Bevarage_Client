@@ -18,6 +18,36 @@
 
     box-shadow: 8px 8px #27272f7c;
   }
+  .section-shape{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: url(../images/pattern-1.png);
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   @keyframes pulse {
     0%,
 	100% {

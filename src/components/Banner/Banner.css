@@ -1,0 +1,46 @@
+.slick-dots {
+    bottom: 25px;
+}
+.hero-banner{
+    width: 100%;
+    height: 100%;
+    background: #000000a9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.banner-area-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    color: #fff;
+    
+}
+.banner-area-hero h1{
+    font-family: 'Niconne', cursive;
+    font-size: 90px;
+    font-weight: 700;
+    
+}
+.banner-area-hero p{
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 700px;
+
+    
+}
+.banner-area-hero .c-btn{
+    border-radius: 30px;
+
+    
+}
+.banner-area-hero .c-btn:hover {
+
+    box-shadow: 8px 8px #ffffffee;
+}

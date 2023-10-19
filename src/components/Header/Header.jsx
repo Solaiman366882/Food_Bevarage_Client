@@ -4,7 +4,7 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <section className="header-section bg-white">
+        <section className="header-section bg-white shadow-xl">
             <div className=" max-w-screen-xl mx-auto px-3">
                 <div className="py-5 flex justify-between items-center">
                     <div className="logo-area">
