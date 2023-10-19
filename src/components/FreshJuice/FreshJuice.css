@@ -1,0 +1,29 @@
+section.fresh-juice-section {
+    background: #fff;
+    padding: 50px 0;
+    background: url(../../assets//images/1png.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+section.fresh-juice-section   .title-area{
+    text-align: left;
+  }
+section.fresh-juice-section .title-area h2::after {
+    left: 0%;
+    transform: translateX(0);
+
+}
+section.fresh-juice-section::after {
+    position: absolute;
+    content: '';
+    width: 303px;
+    height: 100%;
+    background: url(/src/assets/images/juice-glass.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}

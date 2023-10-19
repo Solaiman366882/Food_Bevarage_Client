@@ -11,6 +11,7 @@
     text-transform: capitalize;
     background-color: #beb996;
     transition: 1s;
+    border-radius: 5px;
 }
 
 .c-btn:hover {
@@ -29,6 +30,51 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+
+  /* Title Section */
+  .title-area{
+    text-align: center;
+    width: 100%;
+  }
+  .title-area h4 {
+    position: relative;
+    color: #beb996;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-family: 'Niconne', cursive;
+}
+  .title-area h2 {
+    color: #27272f;
+    font-weight: 600;
+    line-height: 1.3em;
+    margin-top: 8px;
+    font-size: 48px;
+    position: relative;
+    padding-bottom: 30px;
+}
+  .title-area h2::after {
+    content: '';
+    width: 70px;
+    height: 22px;
+    position: absolute;
+    background-image: url(../images/separate.png);
+    background-size: contain;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+  .title-area h2 span{
+    color: #de9190;
+}
+  .title-area p{
+    color: #5e5e5e;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
 
 
 
