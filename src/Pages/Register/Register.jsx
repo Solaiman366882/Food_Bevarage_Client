@@ -10,7 +10,7 @@ const Register = () => {
                     <h4>Please ,</h4>
                     <h2>Regist<span>er</span></h2>
                 </div>
-                <div className="form-area">
+                <div className="form-area max-w-3xl">
                     <form className="flex flex-col gap-5">
                         <div className="single-input">
                             <input type="email" name="email" placeholder="Enter your email" />

@@ -44,6 +44,16 @@ const Header = () => {
                                     My Cart
                                 </NavLink>
                             </li>
+                            <li>
+                                <NavLink
+                                    to="/register"
+                                    className={({ isActive, isPending }) =>
+                                        isPending ? "pending" : isActive ? "active" : ""
+                                    }
+                                    >
+                                    Register
+                                </NavLink>
+                            </li>
                         </ul>
                     </nav>
                     <div className="login">
