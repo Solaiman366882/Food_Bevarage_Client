@@ -19,7 +19,7 @@ const Register = () => {
                             <input type="password" name="password" placeholder="Enter your password" />
                         </div>
                         <div className="submit-btn-area">
-                            <input className="c-btn w-full" type="submit" value="Register" />
+                            <input className="form-btn w-full" type="submit" value="Register" />
 
                             <div className="ask-to-go">
                                     <p>Don not have account, please <Link to='/login'><span>Login</span></Link></p>

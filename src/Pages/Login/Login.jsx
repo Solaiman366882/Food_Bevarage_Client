@@ -18,7 +18,7 @@ const Login = () => {
                                 <input type="password" name="password" placeholder="Enter your password" />
                             </div>
                             <div className="submit-btn-area">
-                                <input className="c-btn w-full" type="submit" value="Login" />
+                                <input className="form-btn w-full" type="submit" value="Login" />
 
                                 <div className="ask-to-go">
                                     <p>Don not have account, please <Link to='/register'><span>Register</span></Link></p>

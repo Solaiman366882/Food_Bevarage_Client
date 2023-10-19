@@ -1,6 +1,50 @@
+import Swal from "sweetalert2";
 
 
 const AddProducts = () => {
+    const handleAddProduct = e => {
+
+        e.preventDefault();
+        const form = e.target;
+        const name = form.name.value;
+        const type = form.type.value;
+        const price = form.price.value;
+        const rating = form.rating.value;
+        const photo = form.photo.value;
+        const brand = form.brand.value;
+        const shortDescription = form.shortDescription.value;
+        const newProduct = {
+            name,
+            type,
+            price,
+            rating,
+            photo,
+            brand,
+            shortDescription
+        }
+        console.log(newProduct);
+        fetch('http://localhost:5000/product',{
+            method:'POST',
+            headers:{
+                'content-type':'application/json'
+            },
+            body:JSON.stringify(newProduct)
+        })
+            .then(res => res.json())
+            .then(data => {
+                if(data.insertedId)
+                {
+                    Swal.fire({
+                        title: 'Success',
+                        text: 'Product added Successfully',
+                        icon: 'success',
+                        confirmButtonText: 'Ok'
+                      })
+                }
+                
+            })
+
+    }
     return (
         <div>
             <section>
@@ -11,7 +55,7 @@ const AddProducts = () => {
                             <h2>Add New Products<span>Product</span></h2>
                         </div>
                         <div className="form-area">
-                            <form className="grid grid-cols-2 gap-5">
+                            <form onSubmit={handleAddProduct} className="grid grid-cols-2 gap-5">
                                 <div className="single-input">
                                     <input type="text" name="name" placeholder="Enter Product name" />
                                 </div>
@@ -22,7 +66,7 @@ const AddProducts = () => {
                                     <input type="text" name="price" placeholder="Enter Price" />
                                 </div>
                                 <div className="single-input">
-                                    <input type="text" name="ratings" placeholder="Enter Ratings" />
+                                    <input type="text" name="rating" placeholder="Enter Ratings" />
                                 </div>
                                 <div className="single-input">
                                     <input type="text" name="photo" placeholder="Enter Photo URL" />
