@@ -16,7 +16,7 @@ const AddProducts = () => {
                                     <input type="text" name="name" placeholder="Enter Product name" />
                                 </div>
                                 <div className="single-input">
-                                    <input type="text" name="brandName" placeholder="Enter your brand name" />
+                                    <input type="text" name="type" placeholder="Enter Product type" />
                                 </div>
                                 <div className="single-input">
                                     <input type="text" name="price" placeholder="Enter Price" />
@@ -28,7 +28,15 @@ const AddProducts = () => {
                                     <input type="text" name="photo" placeholder="Enter Photo URL" />
                                 </div>
                                 <div className="single-input">
-                                    <input type="text" name="type" placeholder="Enter products type" />
+                                    <select className="brand-select" name="brand" id="">
+                                        <option value="no-brand" defaultChecked>Select Brand</option>
+                                        <option value="Coca-Cola">Coca-Cola</option>
+                                        <option value="McDonalds" >McDonalds</option>
+                                        <option value="Starbucks" >Starbucks</option>
+                                        <option value="PepsiCo" >PepsiCo</option>
+                                        <option value="Nestle" >Nestle</option>
+                                        <option value="Kellogg's" disabled>Kelloggs</option>
+                                    </select>
                                 </div>
                                 <div className="single-input col-span-2">
                                     <input type="text" name="shortDescription" placeholder="Enter a short Description" />
