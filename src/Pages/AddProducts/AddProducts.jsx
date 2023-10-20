@@ -86,7 +86,7 @@ const AddProducts = () => {
                                     <input type="text" name="shortDescription" placeholder="Enter a short Description" />
                                 </div>
                                 <div className="submit-btn-area col-span-2">
-                                    <input className="form-btn w-full" type="submit" value="Login" />
+                                    <input className="form-btn w-full" type="submit" value="Add Product" />
                                 </div>
                             </form>
                         </div>
