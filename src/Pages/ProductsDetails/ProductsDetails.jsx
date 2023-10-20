@@ -1,9 +1,38 @@
 import { Link, useLoaderData } from "react-router-dom";
 import './ProductsDetails.css'
+import Swal from "sweetalert2";
 
 const ProductsDetails = () => {
     const product = useLoaderData();
     const {_id,name,type,price,rating,photo,brand,shortDescription} = product || {};
+
+    //add to product to cart
+    const handleAddToCart = () => {
+        
+        const cartProduct = {name,type,price,rating,photo,brand,shortDescription};
+
+        fetch('http://localhost:5000/cart',{
+            method:'POST',
+            headers:{
+                'content-type':'application/json'
+            },
+            body:JSON.stringify(cartProduct)
+        })
+            .then(res => res.json())
+            .then(data => {
+                if(data.insertedId)
+                {
+                    Swal.fire({
+                        title: 'Well Done',
+                        text: 'Product Successfully Added to Cart',
+                        icon: 'success',
+                        confirmButtonText: 'Ok'
+                      })
+                }
+                
+            })
+        
+    }
     return (
         <div>
             <div className="product-details-banner">
@@ -30,7 +59,7 @@ const ProductsDetails = () => {
                         </div>
                         <div className="flex justify-between items-center gap-5">
                             <Link className="flex-1" to={`/productUpdate/${_id}`}><button className="c-btn w-full">Update</button></Link>
-                            <button className="c-btn flex-1">Add to Cart</button>
+                            <button className="c-btn flex-1" onClick={handleAddToCart}>Add to Cart</button>
                         </div>
                     </div>
                 </div>

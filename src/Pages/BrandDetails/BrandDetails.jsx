@@ -6,9 +6,10 @@ import SingleProduct from "../../components/SingleProducts/SingleProduct";
 import { useEffect, useState } from "react";
 
 const BrandDetails = () => {
-    const products = useLoaderData();
+    const loadedProducts = useLoaderData();
     const brandName = useParams() || {};
     const [brand,setBrand] = useState({});
+    const [products,setProducts] = useState([])
 
 
     const settings = {
@@ -23,6 +24,9 @@ const BrandDetails = () => {
 
     useEffect(() => {
 
+        const selectedProducts = loadedProducts.filter(product => product.brand === brandName.name)
+        setProducts(selectedProducts);
+
         //find brand
         fetch('/brand.json')
             .then(res => res.json())
@@ -32,8 +36,8 @@ const BrandDetails = () => {
             })
             .catch(err => console.log(err))
 
-    },[brand])
-
+    },[])
+    // console.log(products.length);
     // console.log(brandName,brand.add_img[0]);
 
     const slide1 = brand.add_img?.slideOne || '';
@@ -64,9 +68,21 @@ const BrandDetails = () => {
                         <h4>See Our  ,</h4>
                         <h2>New <span>Products</span></h2>
                     </div>
-                    <div className="grid grid-cols-3 gap-5 mt-8">
+                    <div>
                         {
-                            products?.map(product => <SingleProduct key={product._id} product={product}></SingleProduct>)
+                            
+                            products.length === 0 ? 
+
+                            <div className="min-h-[50vh] flex justify-center items-center"><h1 className="text-3xl font-bold text-gray-400">Sorry, Out of Stock</h1></div> 
+
+                            :<><div className="grid grid-cols-3 gap-5 mt-8">
+                                {
+                                    
+                                    products?.map(product => <SingleProduct key={product._id} product={product}></SingleProduct>)
+                                }
+                            </div></>
+                            
+                            
                         }
                     </div>
                 </div>

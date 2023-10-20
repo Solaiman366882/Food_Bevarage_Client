@@ -6,8 +6,8 @@ const SingleProduct = ({product}) => {
 
     const {_id,photo,name,price} = product || {};
     return (
-        <div>
-            <div className='product-card'>
+        <div >
+            <div className='product-card flex flex-col justify-between h-full'>
                 <div className='card-img'>
                     <img src={photo} alt="" />
                 </div>

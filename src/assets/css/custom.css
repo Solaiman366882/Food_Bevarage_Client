@@ -223,6 +223,21 @@
     margin-top: 30px;
 }
 
+/* product banner */
+
+.product-details-banner{
+  width: 100%;
+  background: url(../../assets/images/6.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
 
 
 

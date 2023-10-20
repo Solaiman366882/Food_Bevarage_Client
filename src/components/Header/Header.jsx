@@ -1,8 +1,18 @@
 import { Link, NavLink } from "react-router-dom";
-import logo from '../../assets/images/logo-2.png'
+import logo from '../../assets/images/logo-2.png';
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
 import './Header.css'
 
 const Header = () => {
+
+    const {user,logOut} = useContext(AuthContext);
+
+    const handleLogOut = () => {
+        logOut()
+    }
+
+
     return (
         <section className="header-section bg-white shadow-xl">
             <div className=" max-w-screen-xl mx-auto px-3">
@@ -57,9 +67,10 @@ const Header = () => {
                         </ul>
                     </nav>
                     <div className="login">
-                        <Link to='/login'>
-                            <button className="c-btn">Login</button>
-                        </Link>
+                    {
+                        user ? <button onClick={handleLogOut} className=" c-btn">Logout</button>
+                        :<Link to='/login' className=" c-btn">Login</Link>
+                    }
                     </div>
                 </div>
             </div>

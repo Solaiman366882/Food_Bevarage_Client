@@ -23,7 +23,6 @@ const ProductUpdate = () => {
             brand,
             shortDescription
         }
-        console.log(updatedProduct);
         fetch(`http://localhost:5000/product/update/${product._id}`,{
             method:'PUT',
             headers:{
