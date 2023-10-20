@@ -3,61 +3,61 @@
       "brand_name": "Coca-Cola",
       "id": 1,
       "brand_img": "https://i.ibb.co/dMdCzx9/Untitled.png",
-      "add_img": [
-        "https://i.ibb.co/7jmb1pv/Coke2-2018040502441198.jpg",
-        "https://i.ibb.co/nmJBtLf/Coca-Cola-Advertising.jpg",
-        "https://i.ibb.co/CszRVVk/coca-cola-can.jpg"
-      ]
+      "add_img": {
+        "slideOne":"https://i.ibb.co/7jmb1pv/Coke2-2018040502441198.jpg",
+        "slideTwo":"https://i.ibb.co/nmJBtLf/Coca-Cola-Advertising.jpg",
+        "slideThree":"https://i.ibb.co/CszRVVk/coca-cola-can.jpg"
+      }
     },
     {
       "brand_name": "McDonald's",
       "id": 2,
       "brand_img": "https://i.ibb.co/z23pn8C/mcdonalds-brand-logo.jpg",
-      "add_img": [
-        "https://i.ibb.co/pzBCq0k/mcdonalds-case-study-scaled.jpg",
-        "https://i.ibb.co/5jZ5dKj/maxresdefault.jpg",
-        "https://i.ibb.co/rH8YSsG/xdq17cp8ihznw1kpgg3f48w4cpm4.jpg"
-      ]
+      "add_img": {
+        "slideOne":"https://i.ibb.co/pzBCq0k/mcdonalds-case-study-scaled.jpg",
+        "slideTwo":"https://i.ibb.co/5jZ5dKj/maxresdefault.jpg",
+        "slideThree":"https://i.ibb.co/rH8YSsG/xdq17cp8ihznw1kpgg3f48w4cpm4.jpg"
+      }
     },
     {
       "brand_name": "Starbucks",
       "id": 3,
       "brand_img": "https://i.ibb.co/12xfT7b/starbucks-brand-logo.jpg",
-      "add_img": [
-        "https://i.ibb.co/HGwCR4V/maxresdefault.jpg",
-        "https://i.ibb.co/pxLK1R0/107196626-1676655593333-Starbucks-Oleato-Core-Beverages.jpg",
-        "https://i.ibb.co/0DHgMmz/FO8i12-QVs-AAEy7m.jpg"
-      ]
+      "add_img": {
+        "slideOne":"https://i.ibb.co/HGwCR4V/maxresdefault.jpg",
+        "slideTwo":"https://i.ibb.co/pxLK1R0/107196626-1676655593333-Starbucks-Oleato-Core-Beverages.jpg",
+        "slideThree":"https://i.ibb.co/0DHgMmz/FO8i12-QVs-AAEy7m.jpg"
+      }
     },
     {
       "brand_name": "PepsiCo",
       "id": 4,
       "brand_img": "https://i.ibb.co/GxywSZ5/pepsi-branding-logo-1950.jpg",
-      "add_img": [
-        "https://i.ibb.co/Hd1BBMm/Featured-Image-Pepsi-Co-Credit-Pepsi-Co-Website.webp",
-        "https://i.ibb.co/KWmrn3M/50k922l4sjrw5bcmmk2ra6xhtu0k.jpg",
-        "https://i.ibb.co/qsbgL7J/ca722833e2d1f37eb75e130ffb438082.jpg"
-      ]
+      "add_img": {
+        "slideOne":"https://i.ibb.co/Hd1BBMm/Featured-Image-Pepsi-Co-Credit-Pepsi-Co-Website.webp",
+        "slideTwo":"https://i.ibb.co/KWmrn3M/50k922l4sjrw5bcmmk2ra6xhtu0k.jpg",
+        "slideThree":"https://i.ibb.co/qsbgL7J/ca722833e2d1f37eb75e130ffb438082.jpg"
+      }
     },
     {
       "brand_name": "Nestle",
       "id": 5,
       "brand_img": "https://i.ibb.co/VvgL14q/swot-analysis-nestle.jpg",
-      "add_img": [
-        "https://i.ibb.co/BPBKgZg/Nestle-Kit-Kat-Break-Assist.jpg",
-        "https://i.ibb.co/rpnNKVm/nescafe-kofe-kruzhka-kofeinye-ziorna-sovok-otrazhenie-fon.jpg",
-        "https://i.ibb.co/Lz76bTc/Aa-Lmii-NAm7em-Rt-N0y-Feea3c-W8-Ps.jpg"
-      ]
+      "add_img": {
+        "slideOne":"https://i.ibb.co/BPBKgZg/Nestle-Kit-Kat-Break-Assist.jpg",
+        "slideTwo":"https://i.ibb.co/rpnNKVm/nescafe-kofe-kruzhka-kofeinye-ziorna-sovok-otrazhenie-fon.jpg",
+        "slideThree":"https://i.ibb.co/Lz76bTc/Aa-Lmii-NAm7em-Rt-N0y-Feea3c-W8-Ps.jpg"
+      }
     },
     {
       "brand_name": "Kellogg's",
       "id": 6,
       "brand_img": "https://i.ibb.co/frvgqxZ/kelloggs.png",
-      "add_img": [
-        "https://i.ibb.co/bvhCSDr/5-1.webp",
-        "https://i.ibb.co/JqR176N/2-CPHOAnlkd5c-Mzd-NBu-UT.webp",
-        "https://i.ibb.co/3rgyW9M/RTEC-Hispanic-campaign.jpg"
-      ]
+      "add_img": {
+        "slideOne":"https://i.ibb.co/bvhCSDr/5-1.webp",
+        "slideTwo":"https://i.ibb.co/JqR176N/2-CPHOAnlkd5c-Mzd-NBu-UT.webp",
+        "slideThree":"https://i.ibb.co/3rgyW9M/RTEC-Hispanic-campaign.jpg"
+      }
     }
   ]
   

@@ -52,7 +52,7 @@ const AddProducts = () => {
                     <div className="py-10">
                         <div className="title-area">
                             <h4>Want to ,</h4>
-                            <h2>Add New Products<span>Product</span></h2>
+                            <h2>Add New <span>Product</span></h2>
                         </div>
                         <div className="form-area">
                             <form onSubmit={handleAddProduct} className="grid grid-cols-2 gap-5">
