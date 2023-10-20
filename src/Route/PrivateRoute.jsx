@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 import { Navigate, useLocation } from "react-router-dom";
 import PropTypes from 'prop-types'
+import './loader.css'
 
 
 const PrivateRoute = ({children}) => {
@@ -13,7 +14,7 @@ const PrivateRoute = ({children}) => {
 
 
     if(loading){
-        return <div className="h-[80vh] w-full flex justify-center items-center"><span className="loading loading-bars loading-lg"></span></div>
+        return <div className="h-[80vh] w-full flex justify-center items-center"><div className="custom-loader"></div></div>
     }else{
         
         if(user){

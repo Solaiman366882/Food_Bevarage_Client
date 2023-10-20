@@ -23,7 +23,7 @@ const AddProducts = () => {
             shortDescription
         }
         console.log(newProduct);
-        fetch('http://localhost:5000/product',{
+        fetch('https://food-bevarage-server-1xfd3g24f-solaimans-projects-9ae0c3bf.vercel.app/product',{
             method:'POST',
             headers:{
                 'content-type':'application/json'

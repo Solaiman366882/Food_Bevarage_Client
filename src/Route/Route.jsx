@@ -40,22 +40,22 @@ export const router = createBrowserRouter([
             {
                 path:'/my_cart',
                 element:<PrivateRoute><Cart></Cart></PrivateRoute>,
-                loader:() => fetch('http://localhost:5000/cart')
+                loader:() => fetch('https://food-bevarage-server-1xfd3g24f-solaimans-projects-9ae0c3bf.vercel.app/cart')
             },
             {
                 path:'/brand/:name',
                 element:<PrivateRoute><BrandDetails></BrandDetails></PrivateRoute>,
-                loader:() => fetch('http://localhost:5000/products')
+                loader:() => fetch('https://food-bevarage-server-1xfd3g24f-solaimans-projects-9ae0c3bf.vercel.app/products')
             },
             {
                 path:'/product/:id',
                 element:<PrivateRoute><ProductsDetails></ProductsDetails></PrivateRoute>,
-                loader:({params}) => fetch(`http://localhost:5000/product/${params.id}`)
+                loader:({params}) => fetch(`https://food-bevarage-server-1xfd3g24f-solaimans-projects-9ae0c3bf.vercel.app/product/${params.id}`)
             },
             {
                 path:'/productUpdate/:id',
                 element:<PrivateRoute><ProductUpdate></ProductUpdate></PrivateRoute>,
-                loader:({params}) => fetch(`http://localhost:5000/product/${params.id}`)
+                loader:({params}) => fetch(`https://food-bevarage-server-1xfd3g24f-solaimans-projects-9ae0c3bf.vercel.app/product/${params.id}`)
 
             }
         ]

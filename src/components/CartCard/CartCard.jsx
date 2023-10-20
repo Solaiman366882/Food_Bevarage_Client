@@ -22,7 +22,7 @@ const CartCard = ({product,setCartData,cartData}) => {
             //     'Your file has been deleted.',
             //     'success'
             //   )
-                fetch(`http://localhost:5000/cart/${_id}`,{
+                fetch(`https://food-bevarage-server-1xfd3g24f-solaimans-projects-9ae0c3bf.vercel.app/cart/${_id}`,{
                     method:'DELETE'
                 })
                     .then(res => res.json())

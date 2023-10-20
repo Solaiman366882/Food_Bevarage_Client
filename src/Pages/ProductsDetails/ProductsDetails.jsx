@@ -11,7 +11,7 @@ const ProductsDetails = () => {
         
         const cartProduct = {name,type,price,rating,photo,brand,shortDescription};
 
-        fetch('http://localhost:5000/cart',{
+        fetch('https://food-bevarage-server-1xfd3g24f-solaimans-projects-9ae0c3bf.vercel.app/cart',{
             method:'POST',
             headers:{
                 'content-type':'application/json'
