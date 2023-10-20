@@ -1,6 +1,7 @@
 import { Link, useLoaderData } from "react-router-dom";
 import Banner from "../../components/Banner/Banner";
 import FreshJuice from "../../components/FreshJuice/FreshJuice";
+import Featured from "../../components/Featured/Featured";
 
 const Home = () => {
 
@@ -10,6 +11,9 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <FreshJuice></FreshJuice>
+            <div className="py-12">
+                <Featured></Featured>
+            </div>
             <section className="py-24 brand-section relative">
                 <div className=" max-w-screen-xl mx-auto px-4">
                         <div className="title-area mb-8">
