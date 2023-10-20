@@ -24,7 +24,7 @@ const BrandDetails = () => {
 
     useEffect(() => {
 
-        const selectedProducts = loadedProducts.filter(product => product.brand === brandName.name)
+        const selectedProducts = loadedProducts?.filter(product => product.brand === brandName.name)
         setProducts(selectedProducts);
 
         //find brand
@@ -53,13 +53,13 @@ const BrandDetails = () => {
                 <div className=" max-w-screen-xl border border-black mx-auto overflow-hidden">
                     <Slider {...settings}>
                         <div className="single-slider flex items-start justify-center">
-                            <img src={slide1} className="h-[540px] object-cover block w-full" alt="" />
+                            <img src={slide1} className="h-[300px lg:h-[540px] object-cover block w-full" alt="" />
                         </div>
                         <div className="single-slider  flex items-start justify-center">
-                            <img src={slide2} className="h-[540px] object-cover block w-full" alt="" />
+                            <img src={slide2} className="h-[300px] lg:h-[540px] object-cover block w-full" alt="" />
                         </div>
                         <div className="single-slider  flex items-start justify-center">
-                            <img src={slide3} className="h-[540px] object-cover block w-full" alt="" />
+                            <img src={slide3} className="h-[300px] lg:h-[540px] object-cover block w-full" alt="" />
                         </div>
                     </Slider>
                 </div>
@@ -75,7 +75,7 @@ const BrandDetails = () => {
 
                             <div className="min-h-[50vh] flex justify-center items-center"><h1 className="text-3xl font-bold text-gray-400">Sorry, Out of Stock</h1></div> 
 
-                            :<><div className="grid grid-cols-3 gap-5 mt-8">
+                            :<><div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8">
                                 {
                                     
                                     products?.map(product => <SingleProduct key={product._id} product={product}></SingleProduct>)

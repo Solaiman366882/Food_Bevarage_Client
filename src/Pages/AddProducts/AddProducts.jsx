@@ -23,7 +23,7 @@ const AddProducts = () => {
             shortDescription
         }
         console.log(newProduct);
-        fetch('https://food-bevarage-server-1xfd3g24f-solaimans-projects-9ae0c3bf.vercel.app/product',{
+        fetch('https://food-bevarage-server-mu.vercel.app/product',{
             method:'POST',
             headers:{
                 'content-type':'application/json'
@@ -55,7 +55,7 @@ const AddProducts = () => {
                             <h2>Add New <span>Product</span></h2>
                         </div>
                         <div className="form-area">
-                            <form onSubmit={handleAddProduct} className="grid grid-cols-2 gap-5">
+                            <form onSubmit={handleAddProduct} className="grid grid-cols-1 md:grid-cols-2 gap-5">
                                 <div className="single-input">
                                     <input type="text" name="name" placeholder="Enter Product name" />
                                 </div>
@@ -82,10 +82,10 @@ const AddProducts = () => {
                                         <option value="Kellogg's" disabled>Kelloggs</option>
                                     </select>
                                 </div>
-                                <div className="single-input col-span-2">
+                                <div className="single-input md:col-span-2">
                                     <input type="text" name="shortDescription" placeholder="Enter a short Description" />
                                 </div>
-                                <div className="submit-btn-area col-span-2">
+                                <div className="submit-btn-area md:col-span-2">
                                     <input className="form-btn w-full" type="submit" value="Add Product" />
                                 </div>
                             </form>

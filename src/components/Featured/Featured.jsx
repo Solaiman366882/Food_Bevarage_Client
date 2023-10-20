@@ -16,7 +16,7 @@ const Featured = () => {
             </div>
             <div className=" max-w-screen-xl mx-auto px-4 pt-12">
                 <div>
-                    <div className='grid grid-cols-3 gap-5'>
+                    <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
                         <div className="single-feature"><img className='w-full h-64 object-cover' src={juiceImg1} alt="" /></div>
                         <div className="single-feature"><img className='w-full h-64 object-cover' src={juiceImg2} alt="" /></div>
                         <div className="single-feature"><img className='w-full h-64 object-cover' src={juiceImg3} alt="" /></div>
@@ -24,7 +24,7 @@ const Featured = () => {
                         <div className="single-feature"><img className='w-full h-64 object-cover' src={juiceImg5} alt="" /></div>
                         <div className="single-feature"><img className='w-full h-64 object-cover' src={juiceImg6} alt="" /></div>
                         <div className="single-feature"><img className='w-full h-64 object-cover' src={juiceImg7} alt="" /></div>
-                        <div className="single-feature col-span-2"><img className='w-full h-64 object-cover' src={juiceImg8} alt="" /></div>
+                        <div className="single-feature md:col-span-2"><img className='w-full h-64 object-cover' src={juiceImg8} alt="" /></div>
                     </div>
                 </div>
             </div>

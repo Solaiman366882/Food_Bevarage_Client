@@ -44,7 +44,7 @@ const Banner = () => {
                     </div>
                 </Slider>
             </div>
-            <div className="w-full hero-banner">
+            <div className="w-full hero-banner py-5">
                 <div className=" max-w-screen-xl px-5 relative">
                     <div className='banner-area-hero'>
                         <h1><span >Healthy</span> <span>Smoothie</span></h1>

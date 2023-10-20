@@ -4,8 +4,8 @@ import './FreshJuice.css'
 const FreshJuice = () => {
     return (
         <section className="fresh-juice-section">
-            <div className="max-w-screen-xl">
-                <div className="fresh-juice-area flex ga-5 justify-center items-center">
+            <div className="max-w-screen-xl mx-auto">
+                <div className="fresh-juice-area flex flex-col md:flex-row px-3 gap-5 justify-center items-center">
                     <div className="fresh-juice-left flex-1">
                         <img src={juiceImg} alt="" />
                     </div>

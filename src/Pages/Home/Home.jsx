@@ -20,7 +20,7 @@ const Home = () => {
                             <h4>Meet Our</h4>
                             <h2>Popular <span>Brand</span></h2>
                         </div>
-                    <div className="grid grid-cols-3 gap-5">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
                         {
                             brands.map(brand => <Link key={brand.id} to={`/brand/${brand.brand_name}`}>
                                 <div className="brand-card bg-white"> 

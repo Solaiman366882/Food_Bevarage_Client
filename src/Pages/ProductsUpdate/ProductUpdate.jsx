@@ -23,7 +23,7 @@ const ProductUpdate = () => {
             brand,
             shortDescription
         }
-        fetch(`https://food-bevarage-server-1xfd3g24f-solaimans-projects-9ae0c3bf.vercel.app/product/update/${product._id}`,{
+        fetch(`https://food-bevarage-server-mu.vercel.app/product/update/${product._id}`,{
             method:'PUT',
             headers:{
                 'content-type':'application/json'

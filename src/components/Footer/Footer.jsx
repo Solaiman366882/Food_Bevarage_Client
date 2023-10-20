@@ -6,8 +6,8 @@ const Footer = () => {
         <div>
             <footer className='footer-section'>
                 <div className=' max-w-screen-xl mx-auto px-5'>
-                    <div className='flex justify-between items-center'>
-                        <div>
+                    <div className='flex flex-col lg:flex-row gap-5 justify-between lg:items-center'>
+                        <div className=''>
                             <h6>Contact us</h6>
                             <ul>
                                 <li>Your mail @ gmail.com</li>
@@ -16,7 +16,7 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div className="">
-                            <img className='mx-auto' src={logo} alt="" />
+                            <img className='lg:mx-auto' src={logo} alt="" />
                             <p className="copy">© 2023 All Rights Reserved.</p>
                         </div>
                         <div >
