@@ -1,11 +1,17 @@
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import CartCard from "../../components/CartCard/CartCard";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const Cart = () => {
 
+    const{user} = useContext(AuthContext)
     const loadedCartData = useLoaderData();
-    const [cartData,setCartData] = useState(loadedCartData)
+    const [cartData,setCartData] = useState(loadedCartData);
+    useEffect(() => {
+        const  currentUserCartData = loadedCartData.filter(data => data?.userEmail === user.email)
+        setCartData(currentUserCartData)
+    },[])
 
     return (
         <div>
@@ -19,7 +25,7 @@ const Cart = () => {
             <div className=" max-w-screen mx-auto px-4 py-12">
                 {
                     cartData.length > 0 ? 
-                    <div className="grid grid-cols-3 gap-5">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                         {
                             cartData?.map(product => <CartCard key={product._id} cartData={cartData} product={product} setCartData={setCartData}></CartCard>)
                         }

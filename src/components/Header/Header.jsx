@@ -14,7 +14,7 @@ const Header = () => {
 
 
     return (
-        <section className="header-section bg-white shadow-xl">
+        <section className="header-section bg-white shadow-xl relative w-full ">
             <div className=" max-w-screen-xl mx-auto px-3">
                 <div className="py-5 flex justify-between items-center">
                     <div className="logo-area">
@@ -22,8 +22,14 @@ const Header = () => {
                             <img src={logo} alt="Logo" />
                         </Link>
                     </div>
-                    <nav className="">
-                        <ul className="flex gap-5 menu">
+                    <nav className="menu-area">
+                        <input type="checkbox" id="drop-down-cbox"/>
+                        <label htmlFor="drop-down-cbox">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </label>
+                        <ul className="flex flex-col md:flex-row gap-8 md:gap-5 items-center menu">
                             <li>
                                 <NavLink
                                     to="/"
@@ -68,7 +74,17 @@ const Header = () => {
                     </nav>
                     <div className="login">
                     {
-                        user ? <button onClick={handleLogOut} className=" c-btn">Logout</button>
+                        user ? user?.photoURL ? <div className="user-profile">
+                            <div className="user_img"><img src={user.photoURL}></img></div>
+                            <div className="user-info">
+                                <ul>
+                                    <li>{user.displayName}</li>
+                                    <li onClick={handleLogOut}>logout</li>
+                                </ul>
+                            </div>
+                        </div>
+                                    :
+                                    <button onClick={handleLogOut} className=" c-btn">Logout</button>
                         :<Link to='/login' className=" c-btn">Login</Link>
                     }
                     </div>

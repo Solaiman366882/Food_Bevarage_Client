@@ -1,15 +1,19 @@
 import { Link, useLoaderData } from "react-router-dom";
 import './ProductsDetails.css'
 import Swal from "sweetalert2";
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const ProductsDetails = () => {
+    const {user} = useContext(AuthContext);
     const product = useLoaderData();
     const {_id,name,type,price,rating,photo,brand,shortDescription} = product || {};
+    const userEmail = user?.email;
 
     //add to product to cart
     const handleAddToCart = () => {
         
-        const cartProduct = {name,type,price,rating,photo,brand,shortDescription};
+        const cartProduct = {name,type,userEmail,price,rating,photo,brand,shortDescription};
 
         fetch('https://food-bevarage-server-mu.vercel.app/cart',{
             method:'POST',
@@ -44,14 +48,14 @@ const ProductsDetails = () => {
                 <div className="section-shape"></div>
             </div>
             <div className=" max-w-screen-xl mx-auto px-3 py-12 bg-white">
-                <div className="grid grid-cols-2 gap-5 items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center">
                     <div className="product-left">
                         <img src={photo} alt="" />
                     </div>
                     <div className="product-right">
                         <h3>{name}</h3>
                         <p>{shortDescription}</p>
-                        <div className="prod-r-details my-8 grid grid-cols-2 justify-center items-center gap-5">
+                        <div className="prod-r-details my-8 grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-5">
                             <p>Type: {type}</p>
                             <p>Brand Name: {brand}</p>
                             <p>Price : ${price}</p>

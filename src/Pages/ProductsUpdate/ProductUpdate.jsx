@@ -55,9 +55,9 @@ const ProductUpdate = () => {
                         <h2>Update <span>Product</span></h2>
                     </div>
                     <div className="form-area">
-                        <form onSubmit={handleUpdateProduct} className="grid grid-cols-2 gap-5">
+                        <form onSubmit={handleUpdateProduct} className="grid grid-cols-1 md:grid-cols-2 gap-5">
                             <div className="single-input">
-                                <input type="text" name="name"defaultValue={product.name} placeholder="Enter Product name" />
+                                <input type="text" name="name" defaultValue={product.name} placeholder="Enter Product name" />
                             </div>
                             <div className="single-input">
                                 <input type="text" name="type" defaultValue={product.type} placeholder="Enter Product type" />
@@ -82,10 +82,10 @@ const ProductUpdate = () => {
                                     <option value="Kellogg's" disabled>Kelloggs</option>
                                 </select>
                             </div>
-                            <div className="single-input col-span-2">
+                            <div className="single-input md:col-span-2">
                                 <input type="text" name="shortDescription" defaultValue={product.shortDescription} placeholder="Enter a short Description" />
                             </div>
-                            <div className="submit-btn-area col-span-2">
+                            <div className="submit-btn-area md:col-span-2">
                                 <input className="form-btn w-full" type="submit" value="Update" />
                             </div>
                         </form>
