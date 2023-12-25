@@ -15,8 +15,8 @@
 ## Important Link
 
  - [Live Website link](https://brand-shop-baf20.web.app/)
- - [Client Repository link](https://github.com/programming-hero-web-course-4/b8a10-brandshop-client-side-Solaiman366882)
- - [Server Repository link](https://github.com/programming-hero-web-course-4/b8a10-brandshop-server-side-Solaiman366882)
+ - [Client Repository link](https://github.com/Solaiman366882/Food_Bevarage_Client)
+ - [Server Repository link](https://github.com/Solaiman366882/Food_Bevarage_server)
 
 
 
